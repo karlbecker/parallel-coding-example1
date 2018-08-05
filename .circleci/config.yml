@@ -20,7 +20,9 @@ jobs:
       # Install CocoaPods
       - run:
           name: Install CocoaPods
-          command: pod install
+          command: |
+            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+            pod install
 
       - save_cache:
           key: ios-pods-cache-{{ checksum "Podfile" }}-{{ checksum "Podfile.lock" }}
