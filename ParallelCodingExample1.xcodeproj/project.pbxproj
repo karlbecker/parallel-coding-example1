@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074EC457EA4704AD9AB2C914 /* Pods_ParallelCodingExample1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992B91ACD4DDF31F64938B58 /* Pods_ParallelCodingExample1.framework */; };
 		2565CE1421167EE100989A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE1321167EE100989A1B /* AppDelegate.swift */; };
 		2565CE1621167EE200989A1B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE1521167EE200989A1B /* MasterViewController.swift */; };
 		2565CE1821167EE200989A1B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE1721167EE200989A1B /* DetailViewController.swift */; };
@@ -15,6 +16,8 @@
 		2565CE2021167EE400989A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2565CE1E21167EE400989A1B /* LaunchScreen.storyboard */; };
 		2565CE2B21167EE400989A1B /* ParallelCodingExample1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE2A21167EE400989A1B /* ParallelCodingExample1Tests.swift */; };
 		2565CE3621167EE400989A1B /* ParallelCodingExample1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE3521167EE400989A1B /* ParallelCodingExample1UITests.swift */; };
+		BEA941A68A0C79236DF8D6A2 /* Pods_ParallelCodingExample1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */; };
+		D3757B21B348456634989B17 /* Pods_ParallelCodingExample1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB7DB5C26DE48C3EE0B5BD3 /* Pods_ParallelCodingExample1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		2565CE3121167EE400989A1B /* ParallelCodingExample1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelCodingExample1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2565CE3521167EE400989A1B /* ParallelCodingExample1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelCodingExample1UITests.swift; sourceTree = "<group>"; };
 		2565CE3721167EE400989A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallelCodingExample1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A975EE1FF2EC8B97C864CB2 /* Pods-ParallelCodingExample1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EAC766D4CB38FA7A6C1A562 /* Pods-ParallelCodingExample1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		625384C6D142033C34D273AB /* Pods-ParallelCodingExample1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1UITests/Pods-ParallelCodingExample1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F82C1F379D7FF7ABD83D4CA /* Pods-ParallelCodingExample1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1/Pods-ParallelCodingExample1.release.xcconfig"; sourceTree = "<group>"; };
+		8D839DAA8F24B0A35A69D66F /* Pods-ParallelCodingExample1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1/Pods-ParallelCodingExample1.debug.xcconfig"; sourceTree = "<group>"; };
+		992B91ACD4DDF31F64938B58 /* Pods_ParallelCodingExample1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallelCodingExample1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80904DCEA89D29FADE08A4C /* Pods-ParallelCodingExample1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1UITests/Pods-ParallelCodingExample1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		CDB7DB5C26DE48C3EE0B5BD3 /* Pods_ParallelCodingExample1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallelCodingExample1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074EC457EA4704AD9AB2C914 /* Pods_ParallelCodingExample1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3757B21B348456634989B17 /* Pods_ParallelCodingExample1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA941A68A0C79236DF8D6A2 /* Pods_ParallelCodingExample1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2565CE2921167EE400989A1B /* ParallelCodingExample1Tests */,
 				2565CE3421167EE400989A1B /* ParallelCodingExample1UITests */,
 				2565CE1121167EE100989A1B /* Products */,
+				E85860252FCF1F81A7D96BAD /* Pods */,
+				2568055873717B6DC1670C5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = ParallelCodingExample1UITests;
 			sourceTree = "<group>";
 		};
+		2568055873717B6DC1670C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				992B91ACD4DDF31F64938B58 /* Pods_ParallelCodingExample1.framework */,
+				CDB7DB5C26DE48C3EE0B5BD3 /* Pods_ParallelCodingExample1Tests.framework */,
+				321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E85860252FCF1F81A7D96BAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D839DAA8F24B0A35A69D66F /* Pods-ParallelCodingExample1.debug.xcconfig */,
+				7F82C1F379D7FF7ABD83D4CA /* Pods-ParallelCodingExample1.release.xcconfig */,
+				4A975EE1FF2EC8B97C864CB2 /* Pods-ParallelCodingExample1Tests.debug.xcconfig */,
+				4EAC766D4CB38FA7A6C1A562 /* Pods-ParallelCodingExample1Tests.release.xcconfig */,
+				625384C6D142033C34D273AB /* Pods-ParallelCodingExample1UITests.debug.xcconfig */,
+				B80904DCEA89D29FADE08A4C /* Pods-ParallelCodingExample1UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2565CE3A21167EE400989A1B /* Build configuration list for PBXNativeTarget "ParallelCodingExample1" */;
 			buildPhases = (
+				CC480D7D6247F40279D7EDEB /* [CP] Check Pods Manifest.lock */,
 				2565CE0C21167EE100989A1B /* Sources */,
 				2565CE0D21167EE100989A1B /* Frameworks */,
 				2565CE0E21167EE100989A1B /* Resources */,
+				6FBE9F0ABB9F69269ECA80CD /* [CP] Embed Pods Frameworks */,
+				7B61A8F99BB74352099B83C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2565CE3D21167EE400989A1B /* Build configuration list for PBXNativeTarget "ParallelCodingExample1Tests" */;
 			buildPhases = (
+				1F403D7DA9B44A758BD561C1 /* [CP] Check Pods Manifest.lock */,
 				2565CE2221167EE400989A1B /* Sources */,
 				2565CE2321167EE400989A1B /* Frameworks */,
 				2565CE2421167EE400989A1B /* Resources */,
+				EBA12ABC9AFCCDE28B3D4935 /* [CP] Embed Pods Frameworks */,
+				80A20C3102EA270E483D133B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2565CE4021167EE400989A1B /* Build configuration list for PBXNativeTarget "ParallelCodingExample1UITests" */;
 			buildPhases = (
+				F0CD2A4D05B74896DFCCB11C /* [CP] Check Pods Manifest.lock */,
 				2565CE2D21167EE400989A1B /* Sources */,
 				2565CE2E21167EE400989A1B /* Frameworks */,
 				2565CE2F21167EE400989A1B /* Resources */,
+				FD4924863A457412437CE1E5 /* [CP] Embed Pods Frameworks */,
+				B84CF69BCCC8827772568194 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F403D7DA9B44A758BD561C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallelCodingExample1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FBE9F0ABB9F69269ECA80CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1/Pods-ParallelCodingExample1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B61A8F99BB74352099B83C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1/Pods-ParallelCodingExample1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A20C3102EA270E483D133B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B84CF69BCCC8827772568194 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1UITests/Pods-ParallelCodingExample1UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC480D7D6247F40279D7EDEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallelCodingExample1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA12ABC9AFCCDE28B3D4935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0CD2A4D05B74896DFCCB11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParallelCodingExample1UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD4924863A457412437CE1E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParallelCodingExample1UITests/Pods-ParallelCodingExample1UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2565CE0C21167EE100989A1B /* Sources */ = {
@@ -432,15 +633,13 @@
 		};
 		2565CE3B21167EE400989A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D839DAA8F24B0A35A69D66F /* Pods-ParallelCodingExample1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -450,15 +649,13 @@
 		};
 		2565CE3C21167EE400989A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F82C1F379D7FF7ABD83D4CA /* Pods-ParallelCodingExample1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -468,17 +665,14 @@
 		};
 		2565CE3E21167EE400989A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A975EE1FF2EC8B97C864CB2 /* Pods-ParallelCodingExample1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,17 +683,14 @@
 		};
 		2565CE3F21167EE400989A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EAC766D4CB38FA7A6C1A562 /* Pods-ParallelCodingExample1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,16 +701,13 @@
 		};
 		2565CE4121167EE400989A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625384C6D142033C34D273AB /* Pods-ParallelCodingExample1UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -530,16 +718,13 @@
 		};
 		2565CE4221167EE400989A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80904DCEA89D29FADE08A4C /* Pods-ParallelCodingExample1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
