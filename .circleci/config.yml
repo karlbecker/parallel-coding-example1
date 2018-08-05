@@ -13,10 +13,19 @@ jobs:
     steps:
       - checkout
 
+      - restore_cache:
+          keys:
+            - ios-pods-cache
+
       # Install CocoaPods
       - run:
           name: Install CocoaPods
           command: pod install
+
+      - save_cache:
+          key: ios-pods-cache
+          paths:
+            - Pods/
 
       # Build the app and run tests
       - run:
