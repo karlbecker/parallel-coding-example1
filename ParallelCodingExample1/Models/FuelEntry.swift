@@ -59,6 +59,7 @@ struct FuelEntry: FuelTypeEntry {
     }
     
     var odometer: Float
+    var odometerUnits: OdometerUnits
     var date: Date
     var notes: String
     var location: CLLocation?
