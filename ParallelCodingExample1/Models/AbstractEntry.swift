@@ -9,8 +9,14 @@
 import Foundation
 import CoreLocation
 
+enum OdometerUnits {
+    case miles
+    case kilometers
+}
+
 protocol Entry {
     var odometer: Float { get set }
+    var odometerUnits: OdometerUnits { get set }
     
     // MARK: info about the event
     var date: Date { get set }
@@ -25,6 +31,8 @@ protocol Entry {
 
 struct AbstractEntry: Entry {
     var odometer: Float
+    var odometerUnits: OdometerUnits
+    
     var date: Date
     var notes: String
     var location: CLLocation?
@@ -40,6 +48,7 @@ struct AbstractEntry: Entry {
         self.init()
         
         odometer = 0.0
+        odometerUnits = .miles
         date = Date()
         notes = ""
         cost = 0.0

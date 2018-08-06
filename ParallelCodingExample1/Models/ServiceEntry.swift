@@ -19,6 +19,7 @@ struct ServiceEntry: ServiceEntryInfo {
     var entrySubtype: String
     
     var odometer: Float
+    var odometerUnits: OdometerUnits
     var date: Date
     var notes: String
     var location: CLLocation?
@@ -30,7 +31,8 @@ struct ServiceEntry: ServiceEntryInfo {
     
     
     init() {
-        odometer = 0.0;
+        odometer = 0.0
+        odometerUnits = .miles
         date = Date()
         notes = ""
         cost = 0.0

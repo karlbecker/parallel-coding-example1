@@ -60,6 +60,7 @@ struct FuelEntry: FuelEntryInfo {
     }
     
     var odometer: Float
+    var odometerUnits: OdometerUnits
     var date: Date
     var notes: String
     var location: CLLocation?
@@ -70,7 +71,7 @@ struct FuelEntry: FuelEntryInfo {
     }
     
     public func fuelEconomyIn(unit: FuelEconomyUnit, previousEntry: FuelEntryInfo) -> Float {
-        var value: Float = 0.0;
+        var value: Float = 0.0
         
         if (unit == .mpg) {
             value = (self.odometer - previousEntry.odometer) / self.quantityInGallons
@@ -80,7 +81,8 @@ struct FuelEntry: FuelEntryInfo {
     }
     
     init() {
-        odometer = 0.0;
+        odometer = 0.0
+        odometerUnits = .miles
         date = Date()
         notes = ""
         cost = 0.0
