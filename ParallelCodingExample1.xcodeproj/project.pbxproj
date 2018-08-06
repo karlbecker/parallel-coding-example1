@@ -16,6 +16,10 @@
 		2565CE2021167EE400989A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2565CE1E21167EE400989A1B /* LaunchScreen.storyboard */; };
 		2565CE2B21167EE400989A1B /* ParallelCodingExample1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE2A21167EE400989A1B /* ParallelCodingExample1Tests.swift */; };
 		2565CE3621167EE400989A1B /* ParallelCodingExample1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE3521167EE400989A1B /* ParallelCodingExample1UITests.swift */; };
+		2565CE4A2117A80700989A1B /* AbstractEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE492117A80700989A1B /* AbstractEntry.swift */; };
+		2565CE502117A84100989A1B /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE4F2117A84100989A1B /* ServiceEntry.swift */; };
+		2565CE542117AE0600989A1B /* FuelEconomyCalculationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE532117AE0600989A1B /* FuelEconomyCalculationTest.swift */; };
+		2565CE552117BA2D00989A1B /* FuelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE4C2117A83100989A1B /* FuelEntry.swift */; };
 		BEA941A68A0C79236DF8D6A2 /* Pods_ParallelCodingExample1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */; };
 		D3757B21B348456634989B17 /* Pods_ParallelCodingExample1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB7DB5C26DE48C3EE0B5BD3 /* Pods_ParallelCodingExample1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +56,10 @@
 		2565CE3121167EE400989A1B /* ParallelCodingExample1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelCodingExample1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2565CE3521167EE400989A1B /* ParallelCodingExample1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelCodingExample1UITests.swift; sourceTree = "<group>"; };
 		2565CE3721167EE400989A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2565CE492117A80700989A1B /* AbstractEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractEntry.swift; sourceTree = "<group>"; };
+		2565CE4C2117A83100989A1B /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FuelEntry.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
+		2565CE4F2117A84100989A1B /* ServiceEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEntry.swift; sourceTree = "<group>"; };
+		2565CE532117AE0600989A1B /* FuelEconomyCalculationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEconomyCalculationTest.swift; sourceTree = "<group>"; };
 		321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallelCodingExample1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A975EE1FF2EC8B97C864CB2 /* Pods-ParallelCodingExample1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EAC766D4CB38FA7A6C1A562 /* Pods-ParallelCodingExample1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 		2565CE1221167EE100989A1B /* ParallelCodingExample1 */ = {
 			isa = PBXGroup;
 			children = (
+				2565CE482117A7E800989A1B /* Models */,
 				2565CE1321167EE100989A1B /* AppDelegate.swift */,
 				2565CE1521167EE200989A1B /* MasterViewController.swift */,
 				2565CE1721167EE200989A1B /* DetailViewController.swift */,
@@ -130,6 +139,8 @@
 		2565CE2921167EE400989A1B /* ParallelCodingExample1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2565CE522117ADEB00989A1B /* ModelTests */,
+				2565CE442117916500989A1B /* Mocks */,
 				2565CE2A21167EE400989A1B /* ParallelCodingExample1Tests.swift */,
 				2565CE2C21167EE400989A1B /* Info.plist */,
 			);
@@ -143,6 +154,31 @@
 				2565CE3721167EE400989A1B /* Info.plist */,
 			);
 			path = ParallelCodingExample1UITests;
+			sourceTree = "<group>";
+		};
+		2565CE442117916500989A1B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2565CE482117A7E800989A1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2565CE492117A80700989A1B /* AbstractEntry.swift */,
+				2565CE4C2117A83100989A1B /* FuelEntry.swift */,
+				2565CE4F2117A84100989A1B /* ServiceEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2565CE522117ADEB00989A1B /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2565CE532117AE0600989A1B /* FuelEconomyCalculationTest.swift */,
+			);
+			path = ModelTests;
 			sourceTree = "<group>";
 		};
 		2568055873717B6DC1670C5B /* Frameworks */ = {
@@ -460,8 +496,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2565CE4A2117A80700989A1B /* AbstractEntry.swift in Sources */,
 				2565CE1821167EE200989A1B /* DetailViewController.swift in Sources */,
+				2565CE502117A84100989A1B /* ServiceEntry.swift in Sources */,
 				2565CE1621167EE200989A1B /* MasterViewController.swift in Sources */,
+				2565CE552117BA2D00989A1B /* FuelEntry.swift in Sources */,
 				2565CE1421167EE100989A1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2565CE542117AE0600989A1B /* FuelEconomyCalculationTest.swift in Sources */,
 				2565CE2B21167EE400989A1B /* ParallelCodingExample1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,7 +679,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -655,7 +698,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -672,7 +718,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -690,7 +740,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -707,7 +761,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -724,7 +782,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8734YSS986;
 				INFOPLIST_FILE = ParallelCodingExample1UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karlbecker.ParallelCodingExample1UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
