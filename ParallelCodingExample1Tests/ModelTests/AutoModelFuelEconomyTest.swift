@@ -1,5 +1,5 @@
 //
-//  AutoModelTest.swift
+//  AutoModelFuelEconomyTest.swift
 //  ParallelCodingExample1Tests
 //
 //  Created by Karl Becker on 8/12/18.
@@ -13,25 +13,50 @@ import Nimble
 
 
 
-class AutoModelTest: QuickSpec {
+class AutoModelFuelEconomyTest: QuickSpec {
     override func spec() {
         describe("for an automobile with an odometer in miles > ") {
-            //var auto = Auto()
-            //auto.odometerUnits = .miles
+            var auto = Auto()
+            auto.odometerUnits = .miles
             
             describe("with three fuel entries >") {
-                //entry1 - odometer of 5500, quantity = 10 gal
-                //entry2 - odometer of 5600, quantity = 6 gal
-                //entry3 - odometer of 5700, quantity = 8 gal
+                var entry1 = FuelEntry()
+                entry1.odometer = 5500
+                entry1.quantity = 10
+                entry1.quantityUnits = .Gallons
+                
+                var entry2 = FuelEntry()
+                entry2.odometer = 5600
+                entry2.quantity = 6
+                entry2.quantityUnits = .Gallons
+                entry2.isFullTank = true
+                
+                var entry3 = FuelEntry()
+                entry3.odometer = 5700
+                entry3.quantity = 8
+                entry3.quantityUnits = .Gallons
+                
+                auto.fuelEntries = [entry1, entry2, entry3]
+                
                 describe("and the middle entry is not a full tank >") {
-                    //entry2 - not full tank
+                    beforeEach {
+                        entry2.isFullTank = false
+                    }
                     
                     xit("should calculate the mpg for the third entry by factoring in the middle entry", closure: {
+                        let economy = auto.fuelEconomyIn(unit: .mpg, from: entry3, backTo: entry2)
+                        expect(economy.isValid).to(equal(true))
+                        expect(economy.value).to(beCloseTo(14.286, within: 0.001))
+                        expect(economy.units).to(equal(.mpg))
                         //(5700 - 5500) / (6 gal + 8 gal) = 200 / 14 = 14.286 mpg
                     })
                 }
                 
                 describe("and the middle entry is a full tank >") {
+                    beforeEach {
+                        entry2.isFullTank = true
+                    }
+                    
                     xit("should calculate the mpg for the third entry by only comparing it to the middle entry", closure: {
                         //(5700 - 5600) / (8 gal) = 100 / 8 = 12.5 mpg
                     })
