@@ -102,7 +102,10 @@ struct FuelEntry: FuelEntryInfo {
     public func fuelEconomyIn(unit: FuelEconomyUnit, previousEntry: FuelEntryInfo) -> FuelEconomy {
         var economy = FuelEconomy()
         
-        //TODO: determine when fuel economy is valid or not, such as when one of the entries is not a full tank
+        if (!self.isFullTank || !previousEntry.isFullTank) {
+            economy.isValid = false
+            return economy
+        }
         
         if (unit == .mpg) {
             economy.value = (self.odometerInMiles - previousEntry.odometerInMiles) / self.quantityInGallons
