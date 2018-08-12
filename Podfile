@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.4'
 
 use_frameworks!
 
 def testing_pods
     pod 'Quick'
-    pod 'Nimble'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => '7.x-branch'
 end
 
 target 'ParallelCodingExample1' do
