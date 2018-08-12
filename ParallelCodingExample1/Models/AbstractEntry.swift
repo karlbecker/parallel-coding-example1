@@ -14,9 +14,16 @@ enum OdometerUnits {
     case kilometers
 }
 
+enum OdometerInfo {
+    static let kilometersPerMile = 1.60934
+    static let milesPerKilometer = 0.621371
+}
+
 protocol Entry {
-    var odometer: Float { get set }
+    var odometer: Double { get set }
     var odometerUnits: OdometerUnits { get set }
+    var odometerInMiles: Double { get }
+    var odometerInKilometers: Double { get }
     
     // MARK: info about the event
     var date: Date { get set }
@@ -24,23 +31,35 @@ protocol Entry {
     var location: CLLocation? { get set }
     
     // MARK: cost information
-    var cost: Float { get set }
+    var cost: Double { get set }
     var currency: String { get set }
     var costDisplay: String { get }  //this is the localized version of the price with the currency
 }
 
 struct AbstractEntry: Entry {
-    var odometer: Float
+    var odometer: Double
     var odometerUnits: OdometerUnits
     
     var date: Date
     var notes: String
     var location: CLLocation?
-    var cost: Float
+    var cost: Double
     var currency: String
     var costDisplay: String {
         get {
             return "\(currency)\(cost)"
+        }
+    }
+    
+    var odometerInMiles: Double {
+        get {
+            return (odometerUnits == .miles) ? odometer : odometer / OdometerInfo.kilometersPerMile
+        }
+    }
+    
+    var odometerInKilometers: Double {
+        get {
+            return (odometerUnits == .kilometers) ? odometer : odometer / OdometerInfo.milesPerKilometer
         }
     }
     
