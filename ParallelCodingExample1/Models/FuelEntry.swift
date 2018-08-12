@@ -69,9 +69,14 @@ struct FuelEntry: FuelEntryInfo {
         return "\(currency)\(cost)"
     }
     
-    
     public func fuelEconomyIn(unit: FuelEconomyUnit, previousEntry: FuelEntryInfo) -> Float {
-        return 0.0 //we're not doing any math, so this is definitely the wrong result!
+        var value: Float = 0.0;
+        
+        if (unit == .mpg) {
+            value = (self.odometer - previousEntry.odometer) / self.quantityInGallons
+        }
+        
+        return value
     }
     
     init() {
