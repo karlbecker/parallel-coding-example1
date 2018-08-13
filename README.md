@@ -5,6 +5,16 @@ This repo contains an Xcode project that is intended to show how an app can be s
 
 The goal of this approach is to allow someone with knowledge of a particular problem space, and some Xcode knowledge, and be able to write out all the needed functionality to get an app working.
 
+# What does this app do?
+
+Although the repo exists to demonstrate an idea for a particular method of development, there is a goal behind the tests and functionality for this app.
+
+This is supposed to be a fuel economy calculator, like an app I already made long ago: [Car Care](https://karlbecker.com/carcare/)
+
+Of course, the tests and functionality are very sparse right now, but someday hopefully it won't be!
+
+If we did build this app out, I would keep it open source, perhaps charge a little bit on the app store for it, and have the proceeds go either to charity or [360iDev](https://360idev.com), the conference where I'm first sharing this idea.
+
 # Requirements
 
 * Xcode 9.4.3 or newer
