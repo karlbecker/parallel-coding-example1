@@ -20,6 +20,8 @@
 		2565CE502117A84100989A1B /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE4F2117A84100989A1B /* ServiceEntry.swift */; };
 		2565CE542117AE0600989A1B /* FuelEconomyCalculationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE532117AE0600989A1B /* FuelEconomyCalculationTest.swift */; };
 		2565CE552117BA2D00989A1B /* FuelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565CE4C2117A83100989A1B /* FuelEntry.swift */; };
+		25BB9D66211FEA9B00DDD888 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BB9D65211FEA9B00DDD888 /* Auto.swift */; };
+		25BB9D68211FF66800DDD888 /* AutoModelFuelEconomyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BB9D67211FF66800DDD888 /* AutoModelFuelEconomyTest.swift */; };
 		BEA941A68A0C79236DF8D6A2 /* Pods_ParallelCodingExample1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */; };
 		D3757B21B348456634989B17 /* Pods_ParallelCodingExample1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB7DB5C26DE48C3EE0B5BD3 /* Pods_ParallelCodingExample1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -57,9 +59,11 @@
 		2565CE3521167EE400989A1B /* ParallelCodingExample1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelCodingExample1UITests.swift; sourceTree = "<group>"; };
 		2565CE3721167EE400989A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2565CE492117A80700989A1B /* AbstractEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractEntry.swift; sourceTree = "<group>"; };
-		2565CE4C2117A83100989A1B /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FuelEntry.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
+		2565CE4C2117A83100989A1B /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
 		2565CE4F2117A84100989A1B /* ServiceEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEntry.swift; sourceTree = "<group>"; };
 		2565CE532117AE0600989A1B /* FuelEconomyCalculationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEconomyCalculationTest.swift; sourceTree = "<group>"; };
+		25BB9D65211FEA9B00DDD888 /* Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
+		25BB9D67211FF66800DDD888 /* AutoModelFuelEconomyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoModelFuelEconomyTest.swift; sourceTree = "<group>"; };
 		321D2868DCA63A64FF476395 /* Pods_ParallelCodingExample1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallelCodingExample1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A975EE1FF2EC8B97C864CB2 /* Pods-ParallelCodingExample1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EAC766D4CB38FA7A6C1A562 /* Pods-ParallelCodingExample1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParallelCodingExample1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParallelCodingExample1Tests/Pods-ParallelCodingExample1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 		2565CE482117A7E800989A1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				25BB9D65211FEA9B00DDD888 /* Auto.swift */,
 				2565CE492117A80700989A1B /* AbstractEntry.swift */,
 				2565CE4C2117A83100989A1B /* FuelEntry.swift */,
 				2565CE4F2117A84100989A1B /* ServiceEntry.swift */,
@@ -177,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				2565CE532117AE0600989A1B /* FuelEconomyCalculationTest.swift */,
+				25BB9D67211FF66800DDD888 /* AutoModelFuelEconomyTest.swift */,
 			);
 			path = ModelTests;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				2565CE1821167EE200989A1B /* DetailViewController.swift in Sources */,
 				2565CE502117A84100989A1B /* ServiceEntry.swift in Sources */,
 				2565CE1621167EE200989A1B /* MasterViewController.swift in Sources */,
+				25BB9D66211FEA9B00DDD888 /* Auto.swift in Sources */,
 				2565CE552117BA2D00989A1B /* FuelEntry.swift in Sources */,
 				2565CE1421167EE100989A1B /* AppDelegate.swift in Sources */,
 			);
@@ -509,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BB9D68211FF66800DDD888 /* AutoModelFuelEconomyTest.swift in Sources */,
 				2565CE542117AE0600989A1B /* FuelEconomyCalculationTest.swift in Sources */,
 				2565CE2B21167EE400989A1B /* ParallelCodingExample1Tests.swift in Sources */,
 			);
